@@ -3,8 +3,10 @@ import { useContext } from "react";
 import { UberContext } from "../context/uber-context";
 //import { ethers } from "ethers";
 
-// todo - better error handling
-// https://www.toptal.com/nodejs/node-js-error-handling
+//todo
+// update readme on how to upload ride types to sanity.io
+// explain studio folder
+// create sample-data folder with ride.json
 
 const style = {
   wrapper: `flex-1 h-full flex flex-col justify-between`,

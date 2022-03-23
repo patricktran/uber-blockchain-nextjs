@@ -1,10 +1,10 @@
 {
   "root": true,
   "project": {
-    "name": "uber-blockchain-nextjs"
+    "name": "[your-sanity-project-name]"
   },
   "api": {
-    "projectId": "512mta84",
+    "projectId": "[your-sanity-project-id]",
     "dataset": "production"
   },
   "plugins": [
