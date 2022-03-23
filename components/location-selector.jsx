@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useState, useContext, useEffect } from "react";
+import { UberContext } from "../context/uber-context";
+import { DebounceInput } from "react-debounce-input";
 
 const style = {
   wrapper: `pt-2`,
@@ -12,9 +14,8 @@ const style = {
 };
 
 const LocationSelector = () => {
+  const { pickup, setPickup, dropoff, setDropoff } = useContext(UberContext);
   const [inFocus, setInFocus] = useState("from");
-  const [pickup, setPickup] = useState("");
-  const [dropoff, setDropOff] = useState("");
 
   return (
     <div className={style.wrapper}>
@@ -36,7 +37,7 @@ const LocationSelector = () => {
               />
             </svg>
           </div>
-          <input
+          <DebounceInput
             className={style.input}
             value={pickup}
             placeholder="Enter pickup location"
@@ -59,11 +60,12 @@ const LocationSelector = () => {
               />
             </svg>
           </div>
-          <input
+          <DebounceInput
+            debounceTimeout={500}
             className={style.input}
-            value={pickup}
+            value={dropoff}
             placeholder="Where to?"
-            onChange={(e) => setDropOff(e.target.value)}
+            onChange={(e) => setDropoff(e.target.value)}
             onFocus={() => setInFocus("to")}
           />
         </div>
