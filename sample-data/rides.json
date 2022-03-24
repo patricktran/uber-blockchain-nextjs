@@ -1,0 +1,34 @@
+{
+  "rides": [
+    {
+      "title": "UberX",
+      "priceMultiplier": 1,
+      "orderById": 1,
+      "image": "assets/rides/UberX.png"
+    },
+    {
+      "title": "UberXL",
+      "priceMultiplier": 2,
+      "orderById": 1.5,
+      "image": "assets/rides/UberXL.png"
+    },
+    {
+      "title": "Black",
+      "priceMultiplier": 2,
+      "orderById": 3,
+      "image": "assets/rides/UberBlack.png"
+    },
+    {
+      "title": "Select",
+      "priceMultiplier": 1.2,
+      "orderById": 4,
+      "image": "assets/rides/UberSelect.png"
+    },
+    {
+      "title": "Black SUV",
+      "priceMultiplier": 2.8,
+      "orderById": 5,
+      "image": "assets/rides/UberBlackSuv.png"
+    }
+  ]
+}
